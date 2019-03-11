@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7E14E8DE20E7B0AA009B8667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14E8DD20E7B0AA009B8667 /* AppDelegate.swift */; };
-		7E14E8E020E7B0AA009B8667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14E8DF20E7B0AA009B8667 /* ViewController.swift */; };
-		7E14E8E320E7B0AA009B8667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E14E8E120E7B0AA009B8667 /* Main.storyboard */; };
 		7E14E8E520E7B0AC009B8667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E14E8E420E7B0AC009B8667 /* Assets.xcassets */; };
-		7E14E8E820E7B0AC009B8667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E14E8E620E7B0AC009B8667 /* LaunchScreen.storyboard */; };
 		7E14E8F320E7B0AC009B8667 /* TestForURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14E8F220E7B0AC009B8667 /* TestForURLTests.swift */; };
 		7E14E8FE20E7B0AC009B8667 /* TestForURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14E8FD20E7B0AC009B8667 /* TestForURLUITests.swift */; };
+		7E14E90C20E7B23F009B8667 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14E90B20E7B23F009B8667 /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +34,7 @@
 /* Begin PBXFileReference section */
 		7E14E8DA20E7B0AA009B8667 /* TestForURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E14E8DD20E7B0AA009B8667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E14E8DF20E7B0AA009B8667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E14E8E220E7B0AA009B8667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E14E8E420E7B0AC009B8667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E14E8E720E7B0AC009B8667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E14E8E920E7B0AC009B8667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E14E8EE20E7B0AC009B8667 /* TestForURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForURLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E14E8F220E7B0AC009B8667 /* TestForURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestForURLTests.swift; sourceTree = "<group>"; };
@@ -47,6 +42,7 @@
 		7E14E8F920E7B0AC009B8667 /* TestForURLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForURLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E14E8FD20E7B0AC009B8667 /* TestForURLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestForURLUITests.swift; sourceTree = "<group>"; };
 		7E14E8FF20E7B0AC009B8667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E14E90B20E7B23F009B8667 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +73,9 @@
 		7E14E8D120E7B0AA009B8667 = {
 			isa = PBXGroup;
 			children = (
-				7E14E8DC20E7B0AA009B8667 /* TestForURL */,
-				7E14E8F120E7B0AC009B8667 /* TestForURLTests */,
-				7E14E8FC20E7B0AC009B8667 /* TestForURLUITests */,
+				7E14E8DC20E7B0AA009B8667 /* Dogs */,
+				7E14E8F120E7B0AC009B8667 /* DogsTests */,
+				7E14E8FC20E7B0AC009B8667 /* DogsUITests */,
 				7E14E8DB20E7B0AA009B8667 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,35 +90,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E14E8DC20E7B0AA009B8667 /* TestForURL */ = {
+		7E14E8DC20E7B0AA009B8667 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
 				7E14E8DD20E7B0AA009B8667 /* AppDelegate.swift */,
-				7E14E8DF20E7B0AA009B8667 /* ViewController.swift */,
-				7E14E8E120E7B0AA009B8667 /* Main.storyboard */,
+				7E14E90B20E7B23F009B8667 /* CollectionView.swift */,
 				7E14E8E420E7B0AC009B8667 /* Assets.xcassets */,
-				7E14E8E620E7B0AC009B8667 /* LaunchScreen.storyboard */,
 				7E14E8E920E7B0AC009B8667 /* Info.plist */,
 			);
-			path = TestForURL;
+			path = Dogs;
 			sourceTree = "<group>";
 		};
-		7E14E8F120E7B0AC009B8667 /* TestForURLTests */ = {
+		7E14E8F120E7B0AC009B8667 /* DogsTests */ = {
 			isa = PBXGroup;
 			children = (
 				7E14E8F220E7B0AC009B8667 /* TestForURLTests.swift */,
 				7E14E8F420E7B0AC009B8667 /* Info.plist */,
 			);
-			path = TestForURLTests;
+			path = DogsTests;
 			sourceTree = "<group>";
 		};
-		7E14E8FC20E7B0AC009B8667 /* TestForURLUITests */ = {
+		7E14E8FC20E7B0AC009B8667 /* DogsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7E14E8FD20E7B0AC009B8667 /* TestForURLUITests.swift */,
 				7E14E8FF20E7B0AC009B8667 /* Info.plist */,
 			);
-			path = TestForURLUITests;
+			path = DogsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E14E8D520E7B0AA009B8667 /* Build configuration list for PBXProject "TestForURL" */;
+			buildConfigurationList = 7E14E8D520E7B0AA009B8667 /* Build configuration list for PBXProject "Dogs" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,9 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E14E8E820E7B0AC009B8667 /* LaunchScreen.storyboard in Resources */,
 				7E14E8E520E7B0AC009B8667 /* Assets.xcassets in Resources */,
-				7E14E8E320E7B0AA009B8667 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E14E8E020E7B0AA009B8667 /* ViewController.swift in Sources */,
+				7E14E90C20E7B23F009B8667 /* CollectionView.swift in Sources */,
 				7E14E8DE20E7B0AA009B8667 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +283,6 @@
 			targetProxy = 7E14E8FA20E7B0AC009B8667 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7E14E8E120E7B0AA009B8667 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E14E8E220E7B0AA009B8667 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7E14E8E620E7B0AC009B8667 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E14E8E720E7B0AC009B8667 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7E14E90020E7B0AC009B8667 /* Debug */ = {
@@ -431,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4X2995X52;
 				INFOPLIST_FILE = TestForURL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4X2995X52;
 				INFOPLIST_FILE = TestForURL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,7 +516,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E14E8D520E7B0AA009B8667 /* Build configuration list for PBXProject "TestForURL" */ = {
+		7E14E8D520E7B0AA009B8667 /* Build configuration list for PBXProject "Dogs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E14E90020E7B0AC009B8667 /* Debug */,
